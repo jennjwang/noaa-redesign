@@ -1,0 +1,249 @@
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 70px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+body{
+  font-family: 'Bebas Neue', 'Lato'
+}
+
+#logo {
+  float: left;
+  color: #0F395F;
+  text-align: center;
+  padding: 16px 16px;
+  cursor: pointer;
+}
+
+#title {
+  margin-top: -20px;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #0F395F;
+  cursor: pointer;
+}
+
+/* #title:hover {
+  filter: drop-shadow(3px 3px 0px #C1D7EB);
+} */
+
+.icon {
+  width: 120px;
+  height: auto;
+  padding-left: 20px;
+}
+
+#noaa{
+  font-size: 17px;
+  font-weight: 100;
+  margin-top: -30px;
+}
+
+/* The dropdown container */
+.dropdown, .search-container {
+  float: left;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+  margin-top: -40px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: #0F395F;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #E2EFFC;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  float: left;
+  /* margin-left: 40px; */
+  margin-top: 55px;
+  position: absolute;
+  background-color: #E2EFFC;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  font-size: 20px;
+  color: #0F395F;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #0F395F;
+  color: aliceblue;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  font-size: 18px;
+  /* border: solid #E2EFFC 2px; */
+  border: none;
+  /* border-radius: 30pt 0pt 0pt 30pt; */
+  width: 150px;
+  font-family: "Lato";
+}
+
+.search-container {
+  align-items: center;
+  padding: 4px;
+  background-color: #E2EFFC;
+  /* border-radius: 30pt; */
+  /* width: 200px; */
+}
+
+.search-container button{
+  background: none;
+  border: none;
+  color: #0F395F;
+  font-size: 20px;
+  padding: 0 10px 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-container:hover{
+  filter: drop-shadow(4px 4px 0px #0F395F);
+}
+
+.search-container:focus-within{
+  background-color: #B5D0EB
+}
+
+.search-container input:focus{
+  outline: none;
+  /* border: solid #0F395F 2px; */
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+}
+
+.header{
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.header p{
+  width: 600px;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card{
+  flex: 0 1 33%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 2rem 2em;
+  height: 300px;
+  background: #F0F7FD;
+  border-radius: 10px;
+  justify-content: center;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgb(0, 0, 0, 25%));
+}
+
+.card:hover{
+  filter: drop-shadow(5px 5px 0px #0F395F);
+}
+
+.card p{
+  width: 350px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.content{
+  text-align: center;
+  height: 300px;
+  padding: 30px;
+}
+
+.page{
+  margin-top: -55px;
+  padding-bottom: 100px;
+}
+
+footer{
+  height: 212px;
+  overflow: hidden;
+  background-color: #e1edf9;
+  display: flex;
+  flex-direction: row;
+}
+
+footer img{
+  width: 120px;
+  height: auto;
+}
+
+#usa{
+  width: 200px;
+}
+
+footer .icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .col{
+  padding: 20px;
+}
+
+footer img{
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* width: 60px; */
+}
+
+li a {
+  display: block;
+}
